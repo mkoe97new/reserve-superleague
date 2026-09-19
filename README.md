@@ -1,2 +1,1 @@
-# reserve-superleague
-Reserve Superleague Homepage
+Reserve Superleague Website Project
