@@ -1,0 +1,85 @@
+body {
+	background: #161a1b;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.standings-page {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px 24px 80px;
+}
+
+.standings-header h1 {
+	margin: 0 0 12px;
+	font-size: 48px;
+	line-height: 1.05em;
+	font-weight: 900;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.standings-header h2 {
+	margin: 0 0 32px;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #e2542a;
+}
+
+.table-wrap {
+	overflow-x: auto;
+}
+
+.standings-table {
+	width: 100%;
+	min-width: 560px;
+	border-collapse: collapse;
+}
+
+.standings-table thead th {
+	padding: 0 10px 14px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #8a8f92;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	white-space: nowrap;
+}
+
+.standings-table tbody td {
+	padding: 16px 10px;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	white-space: nowrap;
+}
+
+.standings-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.col-pos {
+	width: 60px;
+}
+
+.col-team {
+	text-transform: uppercase;
+	min-width: 200px;
+	white-space: normal;
+}
+
+.standings-table tr.rank-1 .col-team {
+	color: #e2542a;
+}
+
+@media all and (min-width: 700px) {
+	.standings-header h1 {
+		font-size: 64px;
+	}
+}
