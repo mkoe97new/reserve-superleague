@@ -144,11 +144,21 @@ h2 {
 .background {
   background: url(../images/background.jpg) no-repeat 50% 50%;
   background-size: cover;
+  background-color: #0a1233;
   position: absolute;
   width: 102%;
   height: 102%;
   left: -1%;
   top: -1%;
+}
+
+/* On unusually wide/short browser windows, cover would crop the
+   crests off the top/bottom; fall back to showing the whole image
+   with matching color bars instead of cropping it. */
+@media (min-aspect-ratio: 19/10) {
+  .background {
+    background-size: contain;
+  }
 }
 
 .contact {
