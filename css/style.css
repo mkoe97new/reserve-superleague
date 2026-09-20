@@ -56,9 +56,9 @@ a {
 h1, h2 { margin: 0; }
 
 h1 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 800;
-	line-height: 60px;
+	line-height: 40px;
 	letter-spacing: -0.08em;
 	color: #161a1b;
 }
@@ -74,8 +74,8 @@ h2 {
 
 #countdown div span {
 	display:block;
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 14px;
+	line-height: 14px;
 	letter-spacing: initial;
 	font-weight: 100;
 	text-transform: uppercase;
@@ -83,7 +83,7 @@ h2 {
 
 #countdown div {
 	display:inline-block;
-    margin: 0 34px;
+    margin: 0 14px;
 }
 
 #countdown {
@@ -161,15 +161,18 @@ h2 {
   }
 }
 
-/* Hero text panel: the title/timer block is vertically centered by
-   JS based on window height, with no awareness of where the crests
-   sit in the background image, so it can land on top of them. A
-   backdrop keeps the text readable no matter what's behind it. */
+/* The title/timer block is vertically centered by JS based on window
+   height, with no awareness of where the crests sit in the background
+   image, so it can land on top of them. A text shadow keeps it
+   readable no matter what's behind it, without a visible backdrop. */
 .hero {
 	display: inline-block;
-	background: rgba(4, 8, 24, 0.55);
-	padding: 3vw 5vw;
-	border-radius: 12px;
+	text-align: center;
+}
+
+.hero h1,
+.hero .sub-title {
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85), 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 .contact {
@@ -254,8 +257,8 @@ h2 {
 
 @media (max-width: 320px) {
 	/* HERO */
-	h1 { font-size: 32px; line-height: 32px; }
-	#countdown div span {font-size: 24px; line-height: 34px;}
+	h1 { font-size: 22px; line-height: 22px; }
+	#countdown div span {font-size: 12px; line-height: 16px;}
 	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
 }
@@ -263,8 +266,8 @@ h2 {
 /* Landscape Phone */
 @media all and (min-width: 400px) {
 	/* HERO */
-	h1 { font-size: 32px; line-height: 32px; }
-	#countdown div span {font-size: 24px; line-height: 34px;}
+	h1 { font-size: 22px; line-height: 22px; }
+	#countdown div span {font-size: 12px; line-height: 16px;}
 	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
 }
@@ -272,7 +275,7 @@ h2 {
 /* Tablet Portrait */
 @media all and (min-width: 700px) {
 	/* HERO */
-	h1 { font-size: 65px; line-height: 65px; }
+	h1 { font-size: 40px; line-height: 40px; }
 	.sub-title { font-size: 16px; line-height: 16px; margin-top: 10px; }
 	.contact { bottom: 10%; }
 	.contact .icons { margin-bottom: 12px; }
@@ -281,9 +284,9 @@ h2 {
 
 @media all and (min-width: 900px) {
 	/* HERO */
-	h1 { font-size: 85px; line-height: 85px; }
+	h1 { font-size: 50px; line-height: 50px; }
 
-	#countdown div span {font-size: 34px; line-height: 34px;}
+	#countdown div span {font-size: 18px; line-height: 18px;}
 	
 	.sub-title { font-size: 16px; line-height: 16px; margin-top: 20px; }
 	.contact { bottom: 8%; }
@@ -292,27 +295,27 @@ h2 {
 
 @media all and (min-width: 1200px) {
 	/* HERO */
-	h1 { font-size: 100px; line-height: 100px; }
-	#countdown div span {font-size: 44px; line-height: 44px;}
+	h1 { font-size: 60px; line-height: 60px; }
+	#countdown div span {font-size: 20px; line-height: 20px;}
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
 }
 
 @media all and (min-width: 1400px) {
 	/* HERO */
-	h1 { font-size: 110px; line-height: 110px; }
+	h1 { font-size: 65px; line-height: 65px; }
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
 }
 
 @media all and (min-width: 1600px) {
 	/* HERO */
-	h1 { font-size: 120px; line-height: 120px; }
-	#countdown div span {font-size: 54px; line-height: 54px;}
+	h1 { font-size: 70px; line-height: 70px; }
+	#countdown div span {font-size: 22px; line-height: 22px;}
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 25px; }
 }
 
 @media all and (min-width: 1920px) {
 	/* HERO */
-	h1 { font-size: 130px; line-height: 130px; }
+	h1 { font-size: 75px; line-height: 75px; }
 	.sub-title { font-size: 24px; line-height: 24px; margin-top: 30px; }
 }
 
