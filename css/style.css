@@ -56,11 +56,11 @@ a {
 h1, h2 { margin: 0; }
 
 h1 {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 800;
-	line-height: 80px;
+	line-height: 60px;
 	letter-spacing: -0.08em;
-	color: #161a1b; 
+	color: #161a1b;
 }
 
 h2 {
@@ -88,7 +88,7 @@ h2 {
 
 #countdown {
 	color: #fff;
-	margin-top: 30px;
+	margin-top: 8px;
 }
 
 .sub-title {
@@ -159,6 +159,17 @@ h2 {
   .background {
     background-size: contain;
   }
+}
+
+/* Hero text panel: the title/timer block is vertically centered by
+   JS based on window height, with no awareness of where the crests
+   sit in the background image, so it can land on top of them. A
+   backdrop keeps the text readable no matter what's behind it. */
+.hero {
+	display: inline-block;
+	background: rgba(4, 8, 24, 0.55);
+	padding: 3vw 5vw;
+	border-radius: 12px;
 }
 
 .contact {
@@ -243,7 +254,7 @@ h2 {
 
 @media (max-width: 320px) {
 	/* HERO */
-	h1 { font-size: 40px; line-height: 40px; }
+	h1 { font-size: 32px; line-height: 32px; }
 	#countdown div span {font-size: 24px; line-height: 34px;}
 	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
@@ -252,7 +263,7 @@ h2 {
 /* Landscape Phone */
 @media all and (min-width: 400px) {
 	/* HERO */
-	h1 { font-size: 40px; line-height: 40px; }
+	h1 { font-size: 32px; line-height: 32px; }
 	#countdown div span {font-size: 24px; line-height: 34px;}
 	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
@@ -261,7 +272,7 @@ h2 {
 /* Tablet Portrait */
 @media all and (min-width: 700px) {
 	/* HERO */
-	h1 { font-size: 90px; line-height: 90px; }
+	h1 { font-size: 65px; line-height: 65px; }
 	.sub-title { font-size: 16px; line-height: 16px; margin-top: 10px; }
 	.contact { bottom: 10%; }
 	.contact .icons { margin-bottom: 12px; }
@@ -270,7 +281,7 @@ h2 {
 
 @media all and (min-width: 900px) {
 	/* HERO */
-	h1 { font-size: 120px; line-height: 120px; }
+	h1 { font-size: 85px; line-height: 85px; }
 
 	#countdown div span {font-size: 34px; line-height: 34px;}
 	
@@ -281,27 +292,27 @@ h2 {
 
 @media all and (min-width: 1200px) {
 	/* HERO */
-	h1 { font-size: 150px; line-height: 150px; }
+	h1 { font-size: 100px; line-height: 100px; }
 	#countdown div span {font-size: 44px; line-height: 44px;}
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
 }
 
 @media all and (min-width: 1400px) {
 	/* HERO */
-	h1 { font-size: 160px; line-height: 160px; }
+	h1 { font-size: 110px; line-height: 110px; }
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
 }
 
 @media all and (min-width: 1600px) {
 	/* HERO */
-	h1 { font-size: 180px; line-height: 180px; }
+	h1 { font-size: 120px; line-height: 120px; }
 	#countdown div span {font-size: 54px; line-height: 54px;}
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 25px; }
 }
 
 @media all and (min-width: 1920px) {
 	/* HERO */
-	h1 { font-size: 200px; line-height: 200px; }
+	h1 { font-size: 130px; line-height: 130px; }
 	.sub-title { font-size: 24px; line-height: 24px; margin-top: 30px; }
 }
 
