@@ -1,0 +1,106 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "label": "Spieltag 1",
+      "games": [
+        {
+          "date": "2026-11-08",
+          "time": "13:00",
+          "home": "Celtic Salmannsd.",
+          "away": "Royal Rainer",
+          "result": "3:1"
+        },
+        {
+          "date": "2026-11-08",
+          "time": "18:00",
+          "home": "Vienna Vibes",
+          "away": "Paulaner Wieden",
+          "result": "2:2"
+        },
+        {
+          "date": "2026-11-08",
+          "time": "15:30",
+          "home": "Marianum",
+          "away": "Panda",
+          "result": "0:4"
+        },
+        {
+          "date": "2026-11-08",
+          "time": "16:15",
+          "home": "Vienna Internationals",
+          "away": "Sonntag 2012",
+          "result": "1:0"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "label": "Spieltag 2",
+      "games": [
+        {
+          "date": "2026-11-14",
+          "time": "16:15",
+          "home": "Sonntag 2012",
+          "away": "Celtic Salmannsd.",
+          "result": "2:2"
+        },
+        {
+          "date": "2026-11-15",
+          "time": "18:00",
+          "home": "Vienna Vibes",
+          "away": "Marianum",
+          "result": "5:0"
+        },
+        {
+          "date": "2026-11-15",
+          "time": "13:00",
+          "home": "Panda",
+          "away": "Royal Rainer",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-11-15",
+          "time": "14:30",
+          "home": "Paulaner Wieden",
+          "away": "Vienna Internationals",
+          "result": "3:2"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "label": "Spieltag 3",
+      "games": [
+        {
+          "date": "2026-11-22",
+          "time": "13:00",
+          "home": "Celtic Salmannsd.",
+          "away": "Vienna Internationals",
+          "result": "0:0"
+        },
+        {
+          "date": "2026-11-22",
+          "time": "15:00",
+          "home": "Royal Rainer",
+          "away": "Vienna Vibes",
+          "result": "1:3"
+        },
+        {
+          "date": "2026-11-22",
+          "time": "16:00",
+          "home": "Panda",
+          "away": "Paulaner Wieden",
+          "result": "2:1"
+        },
+        {
+          "date": "2026-11-23",
+          "time": "11:00",
+          "home": "Sonntag 2012",
+          "away": "Marianum",
+          "result": null
+        }
+      ]
+    }
+  ]
+}
