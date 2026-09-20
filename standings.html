@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>
-            Reserve-Superleague - Team Standing
+            Reserve-Superleague - Tabelle
         </title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <meta content="Reserve-Superleague - Team Standing" name="description">
+        <meta content="Reserve-Superleague - Tabelle, Spiele und Torsch&uuml;tzen" name="description">
 
         <link href="favicon.png" rel="shortcut icon" type="image/png">
 
@@ -19,98 +19,148 @@
         <div class="standings-page">
             <div class="standings-header">
                 <h1>Reserve-Superleague</h1>
-                <h2>Team Standing</h2>
+
+                <nav class="tabs" role="tablist">
+                    <button class="tab-btn" data-tab="tabelle" role="tab" aria-selected="true">Tabelle</button>
+                    <button class="tab-btn" data-tab="spiele" role="tab" aria-selected="false">Spiele</button>
+                    <button class="tab-btn" data-tab="torschuetzen" role="tab" aria-selected="false">Torsch&uuml;tzen</button>
+                </nav>
             </div>
 
-            <div class="table-wrap">
-                <table class="standings-table">
-                    <thead>
-                        <tr>
-                            <th class="col-pos">Pos</th>
-                            <th class="col-team">Team</th>
-                            <th>Spiele</th>
-                            <th>S</th>
-                            <th>U</th>
-                            <th>N</th>
-                            <th>Punkte</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="rank-1">
-                            <td class="col-pos">1</td>
-                            <td class="col-team">Celtic Salmansdorf</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">2</td>
-                            <td class="col-team">Marianum</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">3</td>
-                            <td class="col-team">Panda</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">4</td>
-                            <td class="col-team">Paulaner Wieden</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">5</td>
-                            <td class="col-team">Royal Rainer</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">6</td>
-                            <td class="col-team">Sonntag 2012</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">7</td>
-                            <td class="col-team">Vienna Internationals</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td class="col-pos">8</td>
-                            <td class="col-team">Vienna Vibes</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <!-- Tabelle -->
+            <section class="tab-panel" id="tab-tabelle" role="tabpanel">
+                <div class="table-wrap">
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th class="col-pos">Pos</th>
+                                <th class="col-team">Team</th>
+                                <th>Spiele</th>
+                                <th>S</th>
+                                <th>U</th>
+                                <th>N</th>
+                                <th>Punkte</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="rank-1">
+                                <td class="col-pos">1</td>
+                                <td class="col-team">Celtic Salmansdorf</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">2</td>
+                                <td class="col-team">Marianum</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">3</td>
+                                <td class="col-team">Panda</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">4</td>
+                                <td class="col-team">Paulaner Wieden</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">5</td>
+                                <td class="col-team">Royal Rainer</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">6</td>
+                                <td class="col-team">Sonntag 2012</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">7</td>
+                                <td class="col-team">Vienna Internationals</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="col-pos">8</td>
+                                <td class="col-team">Vienna Vibes</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Spiele -->
+            <section class="tab-panel" id="tab-spiele" role="tabpanel" hidden>
+                <div class="table-wrap">
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th>Spieltag</th>
+                                <th class="col-team">Heim</th>
+                                <th class="col-team">Ausw&auml;rts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="empty-state">Der Spielplan steht noch nicht fest.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Torschuetzen -->
+            <section class="tab-panel" id="tab-torschuetzen" role="tabpanel" hidden>
+                <div class="table-wrap">
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th class="col-team">Spieler</th>
+                                <th class="col-team">Team</th>
+                                <th>Tore</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="empty-state">Noch keine Tore erzielt.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </div>
+
+        <script src="js/standings.js"></script>
     </body>
 </html>
