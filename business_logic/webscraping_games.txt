@@ -1,0 +1,27 @@
+The frist step in the project for extracting real data is the extraction of games. 
+This should be done in the following way:
+
+Get all Games which are in one of those links:
+https://wfv.at/wfv/Bewerb/Freundschaftsspiele/232588?DSG-Reserve-A
+https://wfv.at/wfv/Bewerb/Freundschaftsspiele/232589?DSG-Reserve-B
+
+The list of games are in <div class="shedule_table"...>
+One whole game is in <tr class="spielplanErgebnisseBody...>
+The home team is the first <a...> in <div class="c1_teams"...>
+The away team is the second <a...> in <div class="c1_teams"...>
+
+The result is in the second <td class="...> and within than under <strong>
+
+Only games between 6.11.2026 and 26.11.2026 should be extracted
+Round one between 6.11.2026 and 12.11.2026
+Round two between 13.11.2026 and 19.11.2026
+Round three between 20.11.2026 and 26.11.2026
+
+This should then be organised in a way so that
+Round one is first listed in the list of games with a grey Line saying "Spieltag 1" then all games falling in this period and then the next grey line saying "Spieltag 2" and so one
+
+Lastly if there is a DSg/dsg or a Res/res in the name of the team remove that. 
+
+
+
+

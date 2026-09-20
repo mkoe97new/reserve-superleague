@@ -1,0 +1,57 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "label": "Spieltag 1",
+      "games": [
+        {
+          "date": "2026-11-08",
+          "time": "13:00",
+          "home": "Celtic Salmannsd.",
+          "away": "Royal Rainer",
+          "result": null
+        },
+        {
+          "date": "2026-11-08",
+          "time": "18:00",
+          "home": "Vienna Vibes",
+          "away": "Paulaner Wieden",
+          "result": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "label": "Spieltag 2",
+      "games": [
+        {
+          "date": "2026-11-14",
+          "time": "16:15",
+          "home": "Vienna Internationals",
+          "away": "Sonntag 2012",
+          "result": null
+        },
+        {
+          "date": "2026-11-15",
+          "time": "18:00",
+          "home": "Vienna Vibes",
+          "away": "Marianum 1b",
+          "result": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "label": "Spieltag 3",
+      "games": [
+        {
+          "date": "2026-11-22",
+          "time": "13:00",
+          "home": "Celtic Salmannsd.",
+          "away": "Vienna Internationals",
+          "result": null
+        }
+      ]
+    }
+  ]
+}

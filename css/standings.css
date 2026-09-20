@@ -95,6 +95,17 @@ body {
 	border-bottom: none;
 }
 
+.standings-table tr.matchday-row td {
+	padding: 10px 10px;
+	background: rgba(255, 255, 255, 0.06);
+	color: #8a8f92;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .col-pos {
 	width: 60px;
 }
