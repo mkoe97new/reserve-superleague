@@ -42,7 +42,7 @@ USER_AGENT = (
 )
 
 DATE_RE = re.compile(r"(\d{2})\.(\d{2})\.(\d{4})\s*\|\s*(\d{2}:\d{2})")
-TEAM_TAG_RE = re.compile(r"\b(dsg|res)\b", re.IGNORECASE)
+TEAM_TAG_RE = re.compile(r"\b(dsg|res|1b)\b", re.IGNORECASE)
 
 
 def fetch_rendered_html(url: str) -> str:

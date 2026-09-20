@@ -57,6 +57,88 @@
 		});
 	}
 
+	function computeStandings(data) {
+		var tbody = document.getElementById('tabelle-body');
+		if (!tbody || !data || !data.rounds) {
+			return;
+		}
+
+		var stats = {};
+		Array.prototype.forEach.call(tbody.querySelectorAll('td.col-team'), function (cell) {
+			var name = cell.textContent.trim();
+			stats[name] = { name: name, spiele: 0, s: 0, u: 0, n: 0, punkte: 0 };
+		});
+
+		data.rounds.forEach(function (round) {
+			round.games.forEach(function (game) {
+				if (!game.result) {
+					return;
+				}
+
+				var scores = game.result.split(':');
+				var homeGoals = parseInt(scores[0], 10);
+				var awayGoals = parseInt(scores[1], 10);
+				if (isNaN(homeGoals) || isNaN(awayGoals)) {
+					return;
+				}
+
+				var home = stats[game.home];
+				var away = stats[game.away];
+				if (!home || !away) {
+					return;
+				}
+
+				home.spiele += 1;
+				away.spiele += 1;
+
+				if (homeGoals > awayGoals) {
+					home.s += 1;
+					home.punkte += 3;
+					away.n += 1;
+				} else if (awayGoals > homeGoals) {
+					away.s += 1;
+					away.punkte += 3;
+					home.n += 1;
+				} else {
+					home.u += 1;
+					away.u += 1;
+					home.punkte += 1;
+					away.punkte += 1;
+				}
+			});
+		});
+
+		var ranked = Object.keys(stats).map(function (name) {
+			return stats[name];
+		}).sort(function (a, b) {
+			if (b.punkte !== a.punkte) {
+				return b.punkte - a.punkte;
+			}
+			return a.name.localeCompare(b.name);
+		});
+
+		tbody.innerHTML = '';
+		ranked.forEach(function (team, index) {
+			var row = document.createElement('tr');
+			if (index === 0) {
+				row.className = 'rank-1';
+			}
+
+			[index + 1, team.name, team.spiele, team.s, team.u, team.n, team.punkte].forEach(function (value, colIndex) {
+				var cell = document.createElement('td');
+				if (colIndex === 0) {
+					cell.className = 'col-pos';
+				} else if (colIndex === 1) {
+					cell.className = 'col-team';
+				}
+				cell.textContent = value;
+				row.appendChild(cell);
+			});
+
+			tbody.appendChild(row);
+		});
+	}
+
 	function loadGames() {
 		fetch('data/games.json')
 			.then(function (response) {
@@ -65,9 +147,12 @@
 				}
 				return response.json();
 			})
-			.then(renderGames)
+			.then(function (data) {
+				renderGames(data);
+				computeStandings(data);
+			})
 			.catch(function () {
-				// Keep the existing "Spielplan steht noch nicht fest" empty state.
+				// Keep the existing static empty states.
 			});
 	}
 

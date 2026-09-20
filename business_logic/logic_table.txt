@@ -1,0 +1,15 @@
+For extracting gathering the data for the table the following logic should be done
+
+The table content should come from the games.
+If a team which appears in the games tab wins (has a higher score than the other):
+The winning team is awarded 3 "Punkte" and the loosing team 0 "Punkte".
+In the case of a draw both teams get 1 "Punkte"
+If the number before the ":" is higher than the number after the ":" the "Heim" team wins, else the away team wins
+
+Additionally both temas get +1 in "Spiele" in the table if a result with numbers is entered. 
+The winning team gets +1 for "W" and the loosing team +1 for "L".
+In case of a draw both teams get +1 in the "U" column. 
+
+If there is -:- in the games then the game should count as not played and no point is awarded for any team.
+
+The matching between the games and the table should be done via the name
