@@ -9,14 +9,16 @@
           "time": "13:00",
           "home": "Celtic Salmannsd.",
           "away": "Royal Rainer",
-          "result": null
+          "result": null,
+          "scorers": []
         },
         {
           "date": "2026-11-08",
           "time": "18:00",
           "home": "Vienna Vibes",
           "away": "Paulaner Wieden",
-          "result": null
+          "result": null,
+          "scorers": []
         }
       ]
     },
@@ -29,14 +31,16 @@
           "time": "16:15",
           "home": "Vienna Internationals",
           "away": "Sonntag 2012",
-          "result": null
+          "result": null,
+          "scorers": []
         },
         {
           "date": "2026-11-15",
           "time": "18:00",
           "home": "Vienna Vibes",
           "away": "Marianum",
-          "result": null
+          "result": null,
+          "scorers": []
         }
       ]
     },
@@ -49,7 +53,80 @@
           "time": "13:00",
           "home": "Celtic Salmannsd.",
           "away": "Vienna Internationals",
-          "result": null
+          "result": null,
+          "scorers": []
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "label": "Spieltag 4",
+      "games": [
+        {
+          "date": "2026-08-30",
+          "time": "17:00",
+          "home": "Spice Balls All Stars",
+          "away": "Union Latina",
+          "result": "0:5",
+          "scorers": [
+            [
+              "Robert Castillo",
+              "Union Latina"
+            ],
+            [
+              "Kenan Corbic",
+              "Union Latina"
+            ],
+            [
+              "Mariano Jimenez Olivera",
+              "Union Latina"
+            ],
+            [
+              "Ali Rashid",
+              "Union Latina"
+            ],
+            [
+              "Jonathan Vivas Gonzalez",
+              "Union Latina"
+            ]
+          ]
+        },
+        {
+          "date": "2026-08-30",
+          "time": "18:00",
+          "home": "Pötzleinsdorf 1.SC",
+          "away": "Panda",
+          "result": "5:2",
+          "scorers": [
+            [
+              "Felix Windischbaur",
+              "Pötzleinsdorf 1.SC"
+            ],
+            [
+              "Balint Dudas",
+              "Panda"
+            ],
+            [
+              "Maksym Kovacevic",
+              "Pötzleinsdorf 1.SC"
+            ],
+            [
+              "Franz Langthaler",
+              "Panda"
+            ],
+            [
+              "Nikolaus Tichy",
+              "Pötzleinsdorf 1.SC"
+            ],
+            [
+              "Paul Huemer",
+              "Pötzleinsdorf 1.SC"
+            ],
+            [
+              "Michael Hochstöger",
+              "Pötzleinsdorf 1.SC"
+            ]
+          ]
         }
       ]
     }

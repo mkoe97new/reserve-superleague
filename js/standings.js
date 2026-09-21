@@ -139,6 +139,70 @@
 		});
 	}
 
+	function computeScorers(data) {
+		var tbody = document.getElementById('torschuetzen-body');
+		if (!tbody || !data || !data.rounds) {
+			return;
+		}
+
+		var stats = {};
+		data.rounds.forEach(function (round) {
+			round.games.forEach(function (game) {
+				if (!game.scorers) {
+					return;
+				}
+				game.scorers.forEach(function (scorer) {
+					var name = scorer[0];
+					var team = scorer[1];
+					if (!name) {
+						return;
+					}
+					if (!stats[name]) {
+						stats[name] = { name: name, team: team, tore: 0 };
+					}
+					stats[name].tore += 1;
+				});
+			});
+		});
+
+		var scorers = Object.keys(stats).map(function (name) {
+			return stats[name];
+		}).sort(function (a, b) {
+			if (b.tore !== a.tore) {
+				return b.tore - a.tore;
+			}
+			return a.name.localeCompare(b.name);
+		});
+
+		tbody.innerHTML = '';
+
+		if (!scorers.length) {
+			var emptyRow = document.createElement('tr');
+			var emptyCell = document.createElement('td');
+			emptyCell.colSpan = 3;
+			emptyCell.className = 'empty-state';
+			emptyCell.textContent = 'Noch keine Tore erzielt.';
+			emptyRow.appendChild(emptyCell);
+			tbody.appendChild(emptyRow);
+			return;
+		}
+
+		scorers.forEach(function (scorer) {
+			var row = document.createElement('tr');
+
+			[scorer.name, scorer.team || '-', scorer.tore].forEach(function (value, colIndex) {
+				var cell = document.createElement('td');
+				if (colIndex < 2) {
+					cell.className = 'col-team';
+				}
+				cell.textContent = value;
+				row.appendChild(cell);
+			});
+
+			tbody.appendChild(row);
+		});
+	}
+
 	function loadGames() {
 		fetch('data/games2.json')
 			.then(function (response) {
@@ -150,6 +214,7 @@
 			.then(function (data) {
 				renderGames(data);
 				computeStandings(data);
+				computeScorers(data);
 			})
 			.catch(function () {
 				// Keep the existing static empty states.

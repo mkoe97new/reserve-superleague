@@ -1,0 +1,33 @@
+The third tab tracks the scorers of the extracted matches.
+
+1.
+The scorers also need to be scraped into the games.json file.
+
+The third <td> in the <tr class="spielplanErgebnisseBody"...> has a <div class="links"...> with a link in <a href="..."...>
+This href entry must be used to retrieve the goal scorers. 
+If the <div class="links"...> includes title="Vorbericht" it means that the game has not been played yet and no goal scorers need to be extracted. 
+
+In the opening link under <div class="chronologisch"...> there are multiple <div bis_skin_checked="1">
+Loop through all of these <div...>. If that includes only 2 <spans> take the first <span> and take the <a> of it.
+
+This is the name that should be extracted. The names should be extracted into a list in every game to the json file in the data. 
+
+
+Additionally to the name also the club should be extracted, which is more complex. Before the <div class="chronologisch"...> there is a <div class="head_2_head_teams"...>, which includes two <div class="bis_skin_checked"..> which includes a <span> which has the name of both clubs in the game. 
+
+If you have both variables saved in some local variables (you must remember which club was extracted first and which second) do the following in the steps:
+    In the opening link under <div class="chronologisch"...> there are multiple <div bis_skin_checked="1">
+    Loop through all of these <div...>. If one includes an <img with src=".../football-icon.png ...> check the <div...> before and after the div where the image is in.
+    if the div before includes 2 <spans> take the first <span> and take the <a> of it. This is the name that should be extracted. And we know as it is before that it belongs to the first club extracted. 
+    if the div after includes 2 <spans> take the first <span> and take the <a> of it. This is the name that should be extracted. And we know as it is after that it belongs to the second club extracted. 
+
+The names in combination with the clubs should be extracted into a list of tuples. This should be done for every game to the json file "games.json" in the data. 
+
+
+With that the scraping is done.
+
+
+2. 
+For the showing of the names in the tab every name in the all lists extracted should be checked.
+The times how often a name appears is the number which should be put to "Tore" column.
+The team is the club which is extracted with the player and should be inserted in team. 
