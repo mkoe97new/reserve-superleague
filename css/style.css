@@ -161,18 +161,6 @@ h2 {
   }
 }
 
-/* On phones, "cover" crops the sides and loses some of the crests.
-   Show the whole image instead (letterboxed with matching color bars,
-   same trick as the ultra-wide case above) so all 8 crests are visible,
-   scaled down to fit - 4 above and 4 below the vertically-centered
-   countdown, since that's where the gap between the crest rows in the
-   image already sits. */
-@media (max-width: 699px) {
-  .background {
-    background-size: contain;
-  }
-}
-
 /* The title/timer block is vertically centered by JS based on window
    height, with no awareness of where the crests sit in the background
    image, so it can land on top of them. A text shadow keeps it
