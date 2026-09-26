@@ -161,13 +161,15 @@ h2 {
   }
 }
 
-/* Club crests only belong in the desktop view. On phones, zoom the
-   background in on the crest-free band running through its vertical
-   center so only the starfield shows, instead of showing the logos
-   cropped and off-center. */
+/* On phones, "cover" crops the sides and loses some of the crests.
+   Show the whole image instead (letterboxed with matching color bars,
+   same trick as the ultra-wide case above) so all 8 crests are visible,
+   scaled down to fit - 4 above and 4 below the vertically-centered
+   countdown, since that's where the gap between the crest rows in the
+   image already sits. */
 @media (max-width: 699px) {
   .background {
-    background-size: auto 266%;
+    background-size: contain;
   }
 }
 
