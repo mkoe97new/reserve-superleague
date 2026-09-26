@@ -57,6 +57,9 @@ $(window).load(function(){
 
 $('#countdown').countdown({
 	date: "November 6, 2026 12:00:00",
+	onEnd: function() {
+		window.location.href = "standings.html";
+	},
 	render: function(data) {
 	  var el = $(this.el);
 	  el.empty()

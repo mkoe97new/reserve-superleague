@@ -161,6 +161,16 @@ h2 {
   }
 }
 
+/* Club crests only belong in the desktop view. On phones, zoom the
+   background in on the crest-free band running through its vertical
+   center so only the starfield shows, instead of showing the logos
+   cropped and off-center. */
+@media (max-width: 699px) {
+  .background {
+    background-size: auto 266%;
+  }
+}
+
 /* The title/timer block is vertically centered by JS based on window
    height, with no awareness of where the crests sit in the background
    image, so it can land on top of them. A text shadow keeps it
@@ -266,9 +276,6 @@ h2 {
 /* Landscape Phone */
 @media all and (min-width: 400px) {
 	/* HERO */
-	h1 { font-size: 22px; line-height: 22px; }
-	#countdown div span {font-size: 12px; line-height: 16px;}
-	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
 }
 
