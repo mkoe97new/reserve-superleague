@@ -204,7 +204,7 @@ h2 {
 
 /* Below 393px wide AND 852px tall, use a background cropped for that
    even narrower viewport instead. */
-@media (max-width: 393px) and (max-height: 852px) {
+@media (max-width: 393px) and (max-height: 670px) {
   .background {
     background-image: url(../images/background_393_852/background.jpg);
   }
