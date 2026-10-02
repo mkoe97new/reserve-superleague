@@ -161,6 +161,55 @@ h2 {
   }
 }
 
+/* On narrow/tall (mobile) screens, cover barely scales the image down
+   since it fits to height, leaving the crests cropped and oversized.
+   Switch to contain so the crests shrink to fit the width, with the
+   color bars filling the space above/below. */
+@media (max-aspect-ratio: 3/4) {
+  .background {
+    background-size: contain;
+  }
+}
+
+/* Below 1090px wide, use a background image cropped/sized specifically
+   for narrow viewports instead of scaling the full-size one down. */
+@media (max-width: 1090px){
+  .background {
+    background-image: url(../images/background_1090/background.jpg);
+  }
+}
+
+/* Below 650px wide, switch to an even narrower-cropped background image. */
+@media (max-width: 650px) {
+  .background {
+    background-image: url(../images/background_650/background.jpg);
+  }
+}
+
+/* Below 650px wide AND 930px tall, use a background cropped for that
+   combined narrow/short viewport instead. */
+@media (max-width: 650px) and (max-height: 930px) {
+  .background {
+    background-image: url(../images/background_650_930/background.jpg);
+  }
+}
+
+/* Below 412px wide AND 930px tall, use a background cropped for that
+   even narrower viewport instead. */
+@media (max-width: 412px) and (max-height: 930px) {
+  .background {
+    background-image: url(../images/background_412_930/background.jpg);
+  }
+}
+
+/* Below 393px wide AND 852px tall, use a background cropped for that
+   even narrower viewport instead. */
+@media (max-width: 393px) and (max-height: 852px) {
+  .background {
+    background-image: url(../images/background_393_852/background.jpg);
+  }
+}
+
 /* The title/timer block is vertically centered by JS based on window
    height, with no awareness of where the crests sit in the background
    image, so it can land on top of them. A text shadow keeps it
@@ -259,7 +308,7 @@ h2 {
 	/* HERO */
 	h1 { font-size: 22px; line-height: 22px; }
 	#countdown div span {font-size: 12px; line-height: 16px;}
-	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
+	.sub-title { font-size: 14px; line-height: 14px; margin-top: 10px; }
 	.contact .icons { margin-bottom: 0px; }
 }
 

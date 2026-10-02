@@ -32,10 +32,7 @@ SOURCE_URLS = [
 ROUNDS = [
     (1, date(2026, 11, 6), date(2026, 11, 12)),
     (2, date(2026, 11, 13), date(2026, 11, 19)),
-    (3, date(2026, 11, 20), date(2026, 11, 26)),
-    # TEMPORARY test round to exercise the goal-scorer scraping against
-    # already-played matches - remove once real Nov 2026 results exist.
-    (4, date(2026, 8, 29), date(2026, 8, 31)),
+    (3, date(2026, 11, 20), date(2026, 11, 26))
 ]
 
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "games.json"
