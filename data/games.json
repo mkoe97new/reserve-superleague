@@ -36,6 +36,14 @@
         },
         {
           "date": "2026-11-15",
+          "time": "17:10",
+          "home": "Paulaner Wieden",
+          "away": "Royal Rainer",
+          "result": null,
+          "scorers": []
+        },
+        {
+          "date": "2026-11-15",
           "time": "18:00",
           "home": "Vienna Vibes",
           "away": "Marianum",
@@ -53,6 +61,14 @@
           "time": "13:00",
           "home": "Celtic Salmannsd.",
           "away": "Vienna Internationals",
+          "result": null,
+          "scorers": []
+        },
+        {
+          "date": "2026-11-22",
+          "time": "17:10",
+          "home": "Royal Rainer",
+          "away": "Panda",
           "result": null,
           "scorers": []
         }
