@@ -9,7 +9,7 @@
           "time": "13:00",
           "home": "Celtic Salmannsd.",
           "away": "Royal Rainer",
-          "result": null,
+          "result": "Abgesagt",
           "scorers": []
         },
         {
@@ -17,6 +17,14 @@
           "time": "18:00",
           "home": "Vienna Vibes",
           "away": "Paulaner Wieden",
+          "result": null,
+          "scorers": []
+        },
+        {
+          "date": "2026-11-08",
+          "time": "18:00",
+          "home": "Marianum",
+          "away": "Vienna Internationals",
           "result": null,
           "scorers": []
         }
@@ -61,6 +69,14 @@
           "time": "13:00",
           "home": "Celtic Salmannsd.",
           "away": "Vienna Internationals",
+          "result": null,
+          "scorers": []
+        },
+        {
+          "date": "2026-11-22",
+          "time": "14:00",
+          "home": "Marianum",
+          "away": "Paulaner Wieden",
           "result": null,
           "scorers": []
         },
