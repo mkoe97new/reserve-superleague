@@ -27,6 +27,14 @@
           "away": "Vienna Internationals",
           "result": null,
           "scorers": []
+        },
+        {
+          "date": "2026-11-28",
+          "time": "20:00",
+          "home": "Royal Rainer",
+          "away": "Celtic Salmannsd.",
+          "result": null,
+          "scorers": []
         }
       ]
     },
@@ -64,6 +72,14 @@
       "round": 3,
       "label": "Spieltag 3",
       "games": [
+        {
+          "date": "2026-11-21",
+          "time": "14:01",
+          "home": "Sonntag 2012",
+          "away": "Vienna Vibes",
+          "result": null,
+          "scorers": []
+        },
         {
           "date": "2026-11-22",
           "time": "13:00",

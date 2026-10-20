@@ -32,7 +32,8 @@ SOURCE_URLS = [
 ROUNDS = [
     (1, date(2026, 11, 6), date(2026, 11, 12)),
     (2, date(2026, 11, 13), date(2026, 11, 19)),
-    (3, date(2026, 11, 20), date(2026, 11, 26))
+    (3, date(2026, 11, 20), date(2026, 11, 26)),
+    (1, date(2026, 11, 27), date(2026, 12, 31)),
 ]
 
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "games.json"
@@ -230,7 +231,8 @@ def main():
         browser.close()
 
     rounds = []
-    for round_no, _, _ in ROUNDS:
+    round_numbers = sorted(set(round_no for round_no, _, _ in ROUNDS))
+    for round_no in round_numbers:
         round_games = [g for g in unique_games if g["round"] == round_no]
         if not round_games:
             continue
