@@ -14,19 +14,106 @@
         },
         {
           "date": "2026-11-08",
+          "time": "13:00",
+          "home": "Celtic Salmannsd.",
+          "away": "Penarol Wien",
+          "result": "3:5",
+          "scorers": [
+            [
+              "Paul Hantschk",
+              "Celtic Salmannsd."
+            ],
+            [
+              "Raphael Drexel",
+              "Penarol Wien"
+            ],
+            [
+              "Tobias Schulnig",
+              "Penarol Wien"
+            ],
+            [
+              "Konrad Schneider",
+              "Penarol Wien"
+            ],
+            [
+              "Maximilian Öhre",
+              "Penarol Wien"
+            ],
+            [
+              "Anil Doganyigit",
+              "Penarol Wien"
+            ],
+            [
+              "Edis Gandon",
+              "Celtic Salmannsd."
+            ]
+          ]
+        },
+        {
+          "date": "2026-11-08",
           "time": "18:00",
           "home": "Vienna Vibes",
           "away": "Paulaner Wieden",
-          "result": null,
-          "scorers": []
+          "result": "1:4",
+          "scorers": [
+            [
+              "Nicolaus Fabian",
+              "Paulaner Wieden"
+            ],
+            [
+              "Elias Domanig",
+              "Paulaner Wieden"
+            ],
+            [
+              "Olanrewaju Ajibua",
+              "Paulaner Wieden"
+            ],
+            [
+              "David Kimmel",
+              "Vienna Vibes"
+            ],
+            [
+              "Olanrewaju Ajibua",
+              "Paulaner Wieden"
+            ]
+          ]
         },
         {
           "date": "2026-11-08",
           "time": "18:00",
           "home": "Marianum",
           "away": "Vienna Internationals",
-          "result": null,
-          "scorers": []
+          "result": "2:5",
+          "scorers": [
+            [
+              "Pierluigi Tinessa",
+              "Vienna Internationals"
+            ],
+            [
+              "Adria Fontrodona I Bach",
+              "Vienna Internationals"
+            ],
+            [
+              "John Haberl-Arkhurst",
+              "Vienna Internationals"
+            ],
+            [
+              "Enrico Soranzo",
+              "Vienna Internationals"
+            ],
+            [
+              "Enrico Soranzo",
+              "Vienna Internationals"
+            ],
+            [
+              "Peter Mühlbauer",
+              "Marianum"
+            ],
+            [
+              "Luka Pasalic",
+              "Marianum"
+            ]
+          ]
         },
         {
           "date": "2026-11-28",
